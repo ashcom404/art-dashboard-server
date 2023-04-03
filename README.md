@@ -13,7 +13,7 @@ Build
 Create podman network
 
 `podman network create art-dashboard-network`
-
+ 
 Start DB server
 
     podman run --net art-dashboard-network --name mariadb -e MARIADB_ROOT_PASSWORD=secret -e MARIADB_DATABASE=doozer_build -d docker.io/library/mariadb:latest
